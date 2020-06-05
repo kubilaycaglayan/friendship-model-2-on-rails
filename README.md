@@ -85,3 +85,7 @@ tayo = User.find(2)
 tayo.friends
 #=> returns the confirmed friends of tayo
 ```
+
+## Contact
+
+👤 [Kubilay Caglayan](kubilaycaglayan.com)
