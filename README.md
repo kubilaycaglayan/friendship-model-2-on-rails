@@ -86,6 +86,15 @@ tayo.friends
 #=> returns the confirmed friends of tayo
 ```
 
-## Contact
+## Author
 
-👤 [Kubilay Caglayan](kubilaycaglayan.com)
+👤 [Kubilay Caglayan](https://kubilaycaglayan.com)
+
+## Show your support
+
+You can contribute by using pull requests or make comments with issues page!
+
+## Acknowledgements
+
+-https://devdocs.io/rails~5.0/activerecord/connectionadapters/schemastatements#method-i-add_foreign_key
+-https://guides.rubyonrails.org/association_basics.html#belongs-to-association-reference
