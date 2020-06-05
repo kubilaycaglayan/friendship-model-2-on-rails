@@ -14,10 +14,10 @@ names.each do |name|
   User.create(name: name)
 end
 
-Friend.create(user_id: 2, friend_id: 1)
-Friend.create(user_id: 2, friend_id: 3, confirmed: true)
-Friend.create(user_id: 2, friend_id: 4, confirmed: true)
+Friendship.create(user_id: 2, friend_id: 1)
+Friendship.create(user_id: 2, friend_id: 3, confirmed: true)
+Friendship.create(user_id: 2, friend_id: 4, confirmed: true)
 
-Friend.create(user_id: 1, friend_id: 2, confirmed: true)
-Friend.create(user_id: 1, friend_id: 3)
-Friend.create(user_id: 1, friend_id: 4, confirmed: true)
+Friendship.create(user_id: 1, friend_id: 2, confirmed: true)
+Friendship.create(user_id: 1, friend_id: 3)
+Friendship.create(user_id: 1, friend_id: 4, confirmed: true)
