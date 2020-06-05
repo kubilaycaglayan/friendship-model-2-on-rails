@@ -1,24 +1,26 @@
-# README
+#
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+rails new friendship-model-2
+rails g model User name
+rails g model Friendship user:references friend_id:integer confirmed:boolean
 
-Things you may want to cover:
+add=>
+, default: false
+add_foreign_key :friends, :user, column: :friend_id
 
-* Ruby version
+seed=>
+names = ["Kubilay","Tayo","Berry", "Dennis"]
 
-* System dependencies
+names.each do |name|
+  User.create(name: name)
+end
 
-* Configuration
+Friend.create(user_id: 2, friend_id: 1)
+Friend.create(user_id: 2, friend_id: 3, confirmed: true)
+Friend.create(user_id: 2, friend_id: 4, confirmed: true)
 
-* Database creation
+Friend.create(user_id: 1, friend_id: 2, confirmed: true)
+Friend.create(user_id: 1, friend_id: 3)
+Friend.create(user_id: 1, friend_id: 4, confirmed: true)
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+models=>

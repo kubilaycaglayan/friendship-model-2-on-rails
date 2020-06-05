@@ -5,3 +5,17 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+names = ["Kubilay","Tayo","Berry", "Dennis"]
+
+names.each do |name|
+  User.create(name: name)
+end
+
+Friend.create(user_id: 2, friend_id: 1)
+Friend.create(user_id: 2, friend_id: 3, confirmed: true)
+Friend.create(user_id: 2, friend_id: 4, confirmed: true)
+
+Friend.create(user_id: 1, friend_id: 2, confirmed: true)
+Friend.create(user_id: 1, friend_id: 3)
+Friend.create(user_id: 1, friend_id: 4, confirmed: true)
